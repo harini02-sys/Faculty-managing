@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faculty Management System</title>
+  
+</head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+#facultyList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#facultyList li {
+  background: #e8e8e8;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+</style>
+
+<body>
+  <div class="container">
+    <h1>Faculty Management System</h1>
+
+    <form id="facultyForm">
+      <input type="text" id="name" placeholder="Faculty Name" required />
+      <input type="text" id="department" placeholder="Department" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <button type="submit">Add Faculty</button>
+    </form>
+
+    <h2>Faculty List</h2>
+    <ul id="facultyList"></ul>
+  </div>
+
+  <script src="faculty_backend.js"></script>
+</body>
+</html>
